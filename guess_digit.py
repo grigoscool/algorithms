@@ -34,8 +34,8 @@ while flag:
 print(F'За {count} попыток Вы угадали число. \nСпасибо, что играли в числовую угадайку. Еще увидимся...')
 
 
-def plus(a, b):
-    return a + b
+def plus(a, c):
+    return a + c
 
 
 if __name__ == '__main__':
