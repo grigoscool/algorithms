@@ -1,16 +1,17 @@
-from random import * 
+from random import *
 
-n = randint(1,100)
+n = randint(1, 100)
 count = 0
 print('Добро пожаловать в числовую угадайку')
 
-def is_valid(x):
 
+def is_valid(x):
     if x.isdigit() and 0 <= int(x) <= 100:
         return True
     else:
         return False
-  
+
+
 flag = True
 while flag:
     y = input('Введите число от 0 до 100')
@@ -29,5 +30,13 @@ while flag:
             flag = False
     else:
         print('А может быть все-таки введем целое число от 1 до 100?')
-        
+
 print(F'За {count} попыток Вы угадали число. \nСпасибо, что играли в числовую угадайку. Еще увидимся...')
+
+
+def plus(a, c):
+    return a + c
+
+
+if __name__ == '__main__':
+    print(plus(10,2))
