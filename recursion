@@ -1,0 +1,33 @@
+"""Рекурсии"""
+
+def suma(s: list) -> int:
+    return 0 if len(s) == 0 else s.pop(0) + suma(s)
+
+
+print(suma([1, 2, 4, 6, -7]))
+
+
+# считает длинну списка
+def cnt(s: list) -> int:
+    # определяем базовый случай
+    if len(s) == 0:
+        return 0
+    # определяем рекурсивный случай
+    else:
+        s.pop()
+        return 1 + cnt(s)
+
+
+print(cnt([1, 2, 4, 6, -7, 4, 6]))
+
+
+# удваивает буквы
+def double(s: str) -> str:
+    s = list(s)
+    if len(s) == 0:
+        return ''
+    else:
+        return s.pop(0) * 2 + double(s)
+
+
+print(double('apple'))
